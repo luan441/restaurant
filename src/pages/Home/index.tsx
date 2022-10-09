@@ -1,6 +1,7 @@
 import menu from 'data/menu.json';
 import styles from './Home.module.scss';
 import stylesTheme from 'styles/Theme.module.scss';
+import ourHome from 'assets/our_home.png';
 
 export default function Home() {
   const recommendedPlates = [...menu].sort(() => 0.5 - Math.random()).splice(0,3);
@@ -20,6 +21,13 @@ export default function Home() {
             </button>
           </div>
         ))}
+      </div>
+      <h3 className={stylesTheme.title}>Nossa casa</h3>
+      <div className={styles.ourHome}>
+        <img src={ourHome} alt="Casa do restaurante" />
+        <div className={styles.ourHome__address}>
+          Rua Lorem Ipsum, 1234 <br /><br /> Dolor Sit - SP
+        </div>
       </div>
     </section>
   );
