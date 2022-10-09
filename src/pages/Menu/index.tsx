@@ -11,12 +11,7 @@ export default function Menu() {
   const [orderer, setOrderer] = useState('');
 
   return (
-    <main>
-      <header className={styles.header}>
-        <div className={styles.header__text}>
-          A casa do código e da massa
-        </div>
-      </header>
+    <>
       <section className={styles.menu}>
         <h3 className={styles.menu__title}>cardápio</h3>
         <Search
@@ -39,6 +34,6 @@ export default function Menu() {
           orderer={orderer}
         />
       </section>
-    </main>
+    </>
   );
 }
