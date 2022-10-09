@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Filters from './Filters';
 import Orderer from './Orderer';
 import Itens from './Itens';
+import stylesTheme from 'styles/Theme.module.scss';
 
 export default function Menu() {
   const [search, setSearch] = useState('');
@@ -13,7 +14,7 @@ export default function Menu() {
   return (
     <>
       <section className={styles.menu}>
-        <h3 className={styles.menu__title}>cardápio</h3>
+        <h3 className={stylesTheme.title}>cardápio</h3>
         <Search
           search={search}
           setSearch={setSearch}
