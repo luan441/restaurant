@@ -1,23 +1,6 @@
 @import 'styles/_variables';
 @import 'styles/breakpoints';
 
-.nav {
-  padding: 20px $padding-x;
-
-  @media (max-width: $desktop_xsm) {
-    padding: 20px $padding-x-mobile;
-  }
-
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 20px $padding-x-sm;
-  }
-
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 20px $padding-x-md;
-  }
-
-}
-
 .header {
   align-items: center;
   background-image: url("/assets/menu/header.png");
@@ -61,7 +44,7 @@
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: 50px $padding-x-md;
   }
-  
+
   &__title {
     color: $dark;
     font-size: 3rem;
