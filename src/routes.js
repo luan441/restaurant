@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import StandardPage from 'components/StandardPage';
 import About from 'pages/About';
 import NotFound from 'pages/NotFound';
+import Plate from 'pages/Plate';
 
 export default function AppRouter() {
   return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
             <Route path='menu' element={<Menu />} />
             <Route path='about' element={<About />} />
           </Route>
+          <Route path='plate/:id' element={<Plate />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
