@@ -2,6 +2,7 @@ import styles from './Plate.module.scss';
 import { useParams, useNavigate } from 'react-router-dom';
 import menu from 'data/menu.json';
 import PlateTags from 'components/PlateTags';
+import NotFound from 'pages/NotFound';
 
 export default function Plate() {
   const { id } = useParams();
@@ -9,7 +10,7 @@ export default function Plate() {
   const plate = menu.find((item) => item.id === Number(id));
 
   if(!plate) {
-    return '';
+    return <NotFound />;
   }
 
   return (
